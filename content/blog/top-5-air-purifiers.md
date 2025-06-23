@@ -15,3 +15,5 @@ Looking for the best air purifier for your home or office? Here's our curated li
 5. **Sharp FP-F40E-W** – Japanese technology with Plasmacluster ions.
 
 All models offer high filtration efficiency and are ideal for urban homes.
+
+thumbnail: "images/blogs/Air_Purifier.jpg"
