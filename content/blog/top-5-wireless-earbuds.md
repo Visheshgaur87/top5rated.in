@@ -15,3 +15,5 @@ Need new earbuds? These 5 offer top features without breaking your budget:
 5. **OPPO Enco Buds 2** – Clear sound with good call quality.
 
 Each pair is tested for comfort, battery, and Bluetooth stability.
+
+thumbnail: "images/blogs/Wireless_Earbuds.jpg"

@@ -69,5 +69,5 @@ Balanced, bass‑rich earbud often rated top‑consumer pick :contentReference[o
 - **Balanced pick**: JBL Live Pro 2 for rich sound and features
 
 ---
-
+thumbnail: "images/blogs/Wireless_TWS.jpg"
 *Note: Prices may vary—click through the affiliate links to check availability and offers. Buying thruogh affiliate links does not affect final price to custommer.*

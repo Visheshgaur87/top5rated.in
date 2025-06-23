@@ -15,3 +15,5 @@ Here are the 5 most recommended microwave ovens for Indian homes:
 5. **Morphy Richards 23MCG** – Budget-friendly convection cooking.
 
 These are ideal for reheating, baking, grilling, and Indian dishes.
+
+thumbnail: "images/blogs/Microwave.jpg"
