@@ -1,0 +1,15 @@
+<h2>More Articles</h2>
+<div class="blog-list">
+  {{ range .Paginator.Pages }}
+    <div class="blog-card">
+      <a href="{{ .RelPermalink }}">
+        <img class="thumbnail" src="{{ .Params.image }}" alt="{{ .Title }}">
+        <h3>{{ .Title }}</h3>
+      </a>
+    </div>
+  {{ end }}
+</div>
+<div class="pagination">
+  {{ if .Paginator.HasPrev }}<a href="{{ .Paginator.Prev.URL }}">« Prev</a>{{ end }}
+  {{ if .Paginator.HasNext }}<a href="{{ .Paginator.Next.URL }}">Next »</a>{{ end }}
+</div>

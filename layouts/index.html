@@ -1,35 +1,32 @@
 {{ define "main" }}
 <div class="homepage-grid">
-
-  <!-- Main Blog Section -->
   <section class="main-content">
     <h2>Top 5 Product Picks</h2>
     <div class="blog-list">
       {{ range first 5 (where (where .Site.RegularPages "Section" "blog") "Kind" "page") }}
         <div class="blog-card">
           <a href="{{ .RelPermalink }}">
-            <img class="thumbnail" src="{{ .Params.image }}" alt="{{ .Title }}">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="thumbnail">
             <h3>{{ .Title }}</h3>
           </a>
         </div>
       {{ end }}
     </div>
-
     <section class="top-deals">
       <h2>🔥 Top Deal for You</h2>
       <p>Hand-picked bestseller on Amazon India:</p>
       <div class="affiliate-box">
         <p><strong>Samsung 28L Convection Microwave</strong></p>
-        <a href="https://www.amazon.in/dp/B01M9AIFJG/?tag=marketjunki87-21" target="_blank" rel="nofollow sponsored">
+        <a href="https://www.amazon.in/dp/B01M9AIFJG/?tag=marketjunki87-21" target="_blank"
+           rel="nofollow sponsored"
+           onclick="gtag('event','click',{'event_category':'Affiliate','event_label':'Samsung 28L Microwave','value':1});">
           <button>Buy on Amazon</button>
         </a>
       </div>
     </section>
   </section>
 
-  <!-- Sidebar Section -->
   <aside class="sidebar">
-
     <div class="sidebar-box">
       <h3>🔥 Trending Deals</h3>
       <ul>
@@ -40,23 +37,22 @@
     </div>
 
     <div class="sidebar-box">
-      <h3>📂 Explore Categories</h3>
+      <h3>📂 Browse by Category</h3>
       <ul>
-        <li><a href="/categories/kitchen">🍳 Kitchen Appliances</a></li>
-        <li><a href="/categories/audio">🎧 Audio & Earbuds</a></li>
-        <li><a href="/categories/cleaning">🧼 Home Cleaning</a></li>
+        {{ range .Site.Taxonomies.categories }}
+          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+        {{ end }}
       </ul>
     </div>
 
     <div class="sidebar-box">
       <h3>📬 Stay Updated!</h3>
-      <p>Get top product picks straight to your inbox.</p>
+      <!-- Placeholder Mailchimp Form -->
       <form>
-        <input type="email" placeholder="Your email" style="padding: 8px; width: 100%; border: 1px solid #ccc; border-radius: 4px;">
-        <button type="submit" style="margin-top: 8px; padding: 10px; width: 100%; background: #ff9900; color: white; border: none; border-radius: 4px;">Subscribe</button>
+        <input type="email" placeholder="Your email" style="padding:8px;width:100%;border:1px solid #ccc;border-radius:4px;">
+        <button type="submit" style="margin-top:8px;padding:10px;width:100%;background:#ff9900;color:white;border:none;border-radius:4px;">Subscribe</button>
       </form>
     </div>
-
   </aside>
 </div>
 {{ end }}
