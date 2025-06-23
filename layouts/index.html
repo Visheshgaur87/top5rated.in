@@ -2,9 +2,11 @@
 <section class="intro">
   <h2>Top 5 Product Picks</h2>
   <ul>
-    <li><a href="/blog/top-5-air-purifiers/">Top 5 Air Purifiers</a></li>
-    <li><a href="/blog/top-5-wireless-earbuds/">Top 5 Wireless Earbuds</a></li>
-    <li><a href="/blog/top-5-microwave-ovens/">Top 5 Microwave Ovens</a></li>
+    {{ range first 5 (where .Site.Pages "Section" "blog") }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
   </ul>
 </section>
 
