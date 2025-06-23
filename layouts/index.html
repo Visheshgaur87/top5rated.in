@@ -6,17 +6,22 @@
   <meta name="description" content="{{ .Params.description }}">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
       background: #f9f9f9;
       color: #333;
     }
     header {
-      background-color: #007acc;
+      background-color: #ff5722;
       color: white;
       padding: 2rem;
       text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 1rem;
     }
     main {
       padding: 2rem;
@@ -24,7 +29,10 @@
       margin: 0 auto;
       background: white;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #ff5722;
     }
     .blog-links {
       margin-top: 2rem;
@@ -49,6 +57,7 @@
 </head>
 <body>
   <header>
+    <img src="/images/logo.png" alt="Top5Rated Logo">
     <h1>{{ .Site.Title }}</h1>
     <p>{{ .Params.description }}</p>
   </header>
