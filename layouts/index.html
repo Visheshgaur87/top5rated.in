@@ -1,113 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Top5Rated.in</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f8f8f8;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #fff;
-      padding: 15px 25px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-    }
-    .header-wrapper img {
-      height: 50px;
-      margin-right: 15px;
-    }
-    .site-info h1 {
-      margin: 0;
-      font-size: 1.8rem;
-      color: #333;
-    }
-    .site-info p {
-      margin: 2px 0 0;
-      font-size: 0.95rem;
-      color: #777;
-    }
-    main {
-      padding: 30px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #333;
-    }
-    .blog-links ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    .blog-links li {
-      margin-bottom: 12px;
-    }
-    .blog-links a {
-      font-size: 1.1rem;
-      color: #0073e6;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .blog-links a:hover {
-      text-decoration: underline;
-    }
-    .affiliate-box {
-      margin: 1.5rem 0;
-      padding: 1rem;
-      border-left: 4px solid #ff9900;
-      background-color: #fffaf2;
-      border-radius: 5px;
-    }
-    .affiliate-box a button {
-      background-color: #ff9900;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-    .affiliate-box a button:hover {
-      background-color: #e68a00;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="header-wrapper">
-      <a href="/"><img src="/images/logo.png" alt="Top5Rated Logo"></a>
-    </div>
-    <div class="site-info">
-      <h1>Top5Rated.in</h1>
-      <p>Curated lists of India’s best-rated gadgets & appliances</p>
-    </div>
-  </header>
-  <main>
-    <section class="blog-links">
-      <h2>Top 5 Product Picks</h2>
-      <ul>
-        <li><a href="/blog/top-5-air-purifiers/">Top 5 Air Purifiers</a></li>
-        <li><a href="/blog/top-5-wireless-earbuds/">Top 5 Wireless Earbuds</a></li>
-        <li><a href="/blog/top-5-microwave-ovens/">Top 5 Microwave Ovens</a></li>
-      </ul>
-    </section>
+{{ define "main" }}
+<section class="intro">
+  <h2>Top 5 Product Picks</h2>
+  <ul>
+    <li><a href="/blog/top-5-air-purifiers/">Top 5 Air Purifiers</a></li>
+    <li><a href="/blog/top-5-wireless-earbuds/">Top 5 Wireless Earbuds</a></li>
+    <li><a href="/blog/top-5-microwave-ovens/">Top 5 Microwave Ovens</a></li>
+  </ul>
+</section>
 
-    <section class="top-deals">
-      <h2>🔥 Top Deal for You</h2>
-      <p>Hand-picked bestseller on Amazon India:</p>
-      <div class="affiliate-box">
-        <p><strong>Samsung 28L Convection Microwave</strong></p>
-        <a href="https://www.amazon.in/dp/B01M9AIFJG/?tag=marketjunki87-21" target="_blank" rel="nofollow sponsored">
-          <button>Buy on Amazon</button>
-        </a>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+<section class="top-deals">
+  <h2>🔥 Top Deal for You</h2>
+  <p>Hand-picked bestseller on Amazon India:</p>
+  <div class="affiliate-box">
+    <p><strong>Samsung 28L Convection Microwave</strong></p>
+    <a href="https://www.amazon.in/dp/B01M9AIFJG/?tag=marketjunki87-21" target="_blank" rel="nofollow sponsored">
+      <button>Buy on Amazon</button>
+    </a>
+  </div>
+</section>
+{{ end }}
