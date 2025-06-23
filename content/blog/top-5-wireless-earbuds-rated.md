@@ -70,4 +70,4 @@ Balanced, bass‑rich earbud often rated top‑consumer pick :contentReference[o
 
 ---
 
-*Note: Prices may vary—click through the affiliate links to check availability and offers.*
+*Note: Prices may vary—click through the affiliate links to check availability and offers. Buying thruogh affiliate links does not affect final price to custommer.*
