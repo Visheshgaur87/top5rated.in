@@ -1,70 +1,26 @@
 {{ define "main" }}
-<div class="blog-cards">
-  {{ range first 5 (where .Site.Pages "Section" "blog") }}
-  <div class="blog-card">
-    <a href="{{ .RelPermalink }}">
-      <img src="/{{ .Params.thumbnail }}" alt="{{ .Title }}">
-      <div class="blog-card-content">
-        <h3>{{ .Title }}</h3>
-      </div>
-    </a>
-  </div>
-  {{ end }}
-</div>
-<div class="homepage-grid">
-  <section class="main-content">
-    <h2>Top 5 Product Picks</h2>
-    <div class="blog-list">
-      {{ range first 5 (where (where .Site.RegularPages "Section" "blog") "Kind" "page") }}
-        <div class="blog-card">
+  <div class="main-content">
+    <section class="blog-grid">
+      {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+      {{ range $paginator.Pages }}
+        <article class="blog-card">
           <a href="{{ .RelPermalink }}">
-            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="thumbnail">
+            {{ with .Params.thumbnail }}
+              <img src="{{ . }}" alt="{{ $.Title }}" class="thumbnail" />
+            {{ else }}
+              <img src="/images/default-thumb.jpg" alt="{{ $.Title }}" class="thumbnail" />
+            {{ end }}
             <h3>{{ .Title }}</h3>
+            <p>{{ .Params.description }}</p>
           </a>
-        </div>
+        </article>
       {{ end }}
-    </div>
-    <section class="top-deals">
-      <h2>🔥 Top Deal for You</h2>
-      <p>Hand-picked bestseller on Amazon India:</p>
-      <div class="affiliate-box">
-        <p><strong>Samsung 28L Convection Microwave</strong></p>
-        <a href="https://www.amazon.in/dp/B01M9AIFJG/?tag=marketjunki87-21" target="_blank"
-           rel="nofollow sponsored"
-           onclick="gtag('event','click',{'event_category':'Affiliate','event_label':'Samsung 28L Microwave','value':1});">
-          <button>Buy on Amazon</button>
-        </a>
-      </div>
     </section>
-  </section>
 
-  <aside class="sidebar">
-    <div class="sidebar-box">
-      <h3>🔥 Trending Deals</h3>
-      <ul>
-        <li><a href="https://www.amazon.in/dp/B09V2JLT7T?tag=marketjunki87-21" target="_blank">boAt Airdopes 141 – ₹999</a></li>
-        <li><a href="https://www.amazon.in/dp/B08ZJM1YCZ?tag=marketjunki87-21" target="_blank">Philips Mixer Grinder – ₹2,299</a></li>
-        <li><a href="https://www.amazon.in/dp/B0BZ3F2JMB?tag=marketjunki87-21" target="_blank">Noise ColorFit Pulse 3 – ₹1,499</a></li>
-      </ul>
-    </div>
+    {{ partial "compare-table.html" . }}
 
-    <div class="sidebar-box">
-      <h3>📂 Browse by Category</h3>
-      <ul>
-        {{ range .Site.Taxonomies.categories }}
-          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
-        {{ end }}
-      </ul>
+    <div class="pagination-wrapper">
+      {{ template "_internal/pagination.html" . }}
     </div>
-
-    <div class="sidebar-box">
-      <h3>📬 Stay Updated!</h3>
-      <!-- Placeholder Mailchimp Form -->
-      <form>
-        <input type="email" placeholder="Your email" style="padding:8px;width:100%;border:1px solid #ccc;border-radius:4px;">
-        <button type="submit" style="margin-top:8px;padding:10px;width:100%;background:#ff9900;color:white;border:none;border-radius:4px;">Subscribe</button>
-      </form>
-    </div>
-  </aside>
-</div>
+  </div>
 {{ end }}

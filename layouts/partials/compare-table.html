@@ -1,0 +1,25 @@
+<section class="compare-table">
+  <h2>Top Product Comparison</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Rating</th>
+        <th>Key Feature</th>
+        <th>Price</th>
+        <th>Buy</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Params.products }}
+        <tr>
+          <td>{{ .name }}</td>
+          <td>{{ .rating }}</td>
+          <td>{{ .feature }}</td>
+          <td>{{ .price }}</td>
+          <td><a href="{{ .affiliate }}" target="_blank">Buy</a></td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</section>
