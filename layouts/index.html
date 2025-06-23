@@ -5,6 +5,37 @@
   <title>{{ .Title }}</title>
   <meta name="description" content="{{ .Params.description }}">
   <style>
+    .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ff5722;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+.site-info h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.site-info p {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  color: #ffeedd;
+}
+
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -56,11 +87,15 @@
   </style>
 </head>
 <body>
-  <header>
+<header>
+  <div class="header-wrapper">
     <img src="/images/logo.png" alt="Top5Rated Logo">
-    <h1>{{ .Site.Title }}</h1>
-    <p>{{ .Params.description }}</p>
-  </header>
+    <div class="site-info">
+      <h1>{{ .Site.Title }}</h1>
+      <p>{{ .Params.description }}</p>
+    </div>
+  </div>
+</header>
   <main>
     <article>
       {{ .Content }}
