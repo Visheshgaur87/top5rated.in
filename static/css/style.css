@@ -145,3 +145,16 @@ a:hover {
 .affiliate-box button:hover {
   background: #e68a00;
 }
+header img {
+  width: 160px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+}
