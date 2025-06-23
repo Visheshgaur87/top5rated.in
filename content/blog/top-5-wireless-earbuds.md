@@ -4,6 +4,7 @@ date = "2025-06-23"
 description = "Get premium sound on a budget with these high-quality wireless earbuds."
 tags = ["earbuds", "wireless", "gadgets"]
 categories = ["Gadgets"]
+thumbnail: "images/blogs/Wireless_Earbuds.jpg"
 +++
 
 Need new earbuds? These 5 offer top features without breaking your budget:
