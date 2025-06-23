@@ -4,6 +4,7 @@ date = "2025-06-23"
 description = "Breathe clean air with our top picks for affordable and effective air purifiers."
 tags = ["air purifiers", "home appliances"]
 categories = ["Home Appliances"]
+thumbnail= "images/blogs/Air_Purifier.jpg"
 +++
 
 Looking for the best air purifier for your home or office? Here's our curated list of the top 5 air purifiers in India for 2025:
@@ -16,4 +17,4 @@ Looking for the best air purifier for your home or office? Here's our curated li
 
 All models offer high filtration efficiency and are ideal for urban homes.
 
-thumbnail: "images/blogs/Air_Purifier.jpg"
+
