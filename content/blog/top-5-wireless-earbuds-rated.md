@@ -4,7 +4,7 @@ date = "2025-06-24"
 description = "Discover the best wireless earbuds in India right now—highly rated, popular, and worth buying."
 tags = ["earbuds","wireless","gadgets"]
 categories = ["Gadgets"]
-thumbnail: "images/blogs/Wireless_TWS.jpg"
+thumbnail= "images/blogs/Wireless_TWS.jpg"
 +++
 
 India’s TWS market is booming in 2025. We analyzed Amazon’s top‑rated and best‑selling earbuds to bring you the **Top 5 Wireless Earbuds** that deliver on audio quality, comfort, and value.

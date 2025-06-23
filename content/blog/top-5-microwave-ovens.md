@@ -4,6 +4,7 @@ date = "2025-06-23"
 description = "Save time and cook smart with these top microwave ovens of 2025."
 tags = ["microwave", "kitchen appliances"]
 categories = ["Home Appliances"]
+thumbnail= "images/blogs/Microwave.jpg"
 +++
 
 Here are the 5 most recommended microwave ovens for Indian homes:
@@ -16,4 +17,4 @@ Here are the 5 most recommended microwave ovens for Indian homes:
 
 These are ideal for reheating, baking, grilling, and Indian dishes.
 
-thumbnail: "images/blogs/Microwave.jpg"
+
