@@ -1,0 +1,115 @@
+/* Reset & Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.site-info h1 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.site-info p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Main */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Links */
+a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Affiliate Box */
+.affiliate-box {
+  background-color: #fff8e1;
+  border-left: 5px solid #ffa000;
+  padding: 15px;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.affiliate-box button {
+  background-color: #ffa000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.affiliate-box button:hover {
+  background-color: #ff8f00;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 600px) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .site-info h1 {
+    font-size: 1.3rem;
+  }
+
+  .site-info p {
+    font-size: 0.9rem;
+  }
+}
