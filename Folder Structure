@@ -1,0 +1,12 @@
+top5rated/
+├── config.toml
+├── content/
+│   └── blog/
+│       └── top-5-budget-phones.md
+├── layouts/
+│   └── _default/
+│       └── baseof.html
+├── static/
+│   └── images/
+├── themes/
+    └── top5rated-theme/
