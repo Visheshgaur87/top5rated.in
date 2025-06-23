@@ -1,3 +1,4 @@
+
 +++
 title = "Top 5 Budget Smartphones in India [2025]"
 date = "2025-06-23"
