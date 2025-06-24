@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="main-wrapper" style="display: flex; gap: 2rem; align-items: flex-start;">
+
+  <!-- 📰 Left Column: Blog Posts -->
+  <div class="main-content" style="flex: 3;">
+    <section class="blog-grid">
+      {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
+      {{ range $paginator.Pages }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </section>
+    <div class="pagination-wrapper">
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </div>
+
+  <!-- 🛍️ Right Sidebar: Top Sellers -->
+  <aside class="sidebar" style="flex: 1; background: #f0fbfa; padding: 1rem; border-left: 2px solid #e0f0ed;">
+    <h3 style="color: #006d77;">Top Sellers</h3>
+    <ul style="list-style: none; padding-left: 0;">
+      <li><a href="#" style="color: #e63946; text-decoration: none;">🔥 Echo Dot (4th Gen)</a></li>
+      <li><a href="#" style="color: #e63946; text-decoration: none;">🔥 Mi Air Purifier 3</a></li>
+      <li><a href="#" style="color: #e63946; text-decoration: none;">🔥 Samsung Smart TV 43"</a></li>
+      <li><a href="#" style="color: #e63946; text-decoration: none;">🔥 Boat Rockerz 255+</a></li>
+      <li><a href="#" style="color: #e63946; text-decoration: none;">🔥 OnePlus Buds Z2</a></li>
+    </ul>
+  </aside>
+
+</div>
+{{ end }}

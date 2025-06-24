@@ -1,12 +1,6 @@
 {{ define "main" }}
-<main class="blog-post">
-  <article>
-    <h1>{{ .Title }}</h1>
-    <p><small>Published on {{ .Date.Format "Jan 2, 2006" }}</small></p>
-    {{ with .Params.thumbnail }}
-      <img src="{{ . }}" alt="Thumbnail for {{ $.Title }}">
-    {{ end }}
-    {{ .Content }}
-  </article>
-</main>
+<article>
+  <h1>{{ .Title }}</h1>
+  <div>{{ .Content }}</div>
+</article>
 {{ end }}
