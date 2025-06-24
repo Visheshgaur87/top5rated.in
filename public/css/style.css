@@ -1,67 +1,40 @@
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+body { font-family: sans-serif; background: #f7fdfc; color: #333; }
+body {
+  font-family: sans-serif;
+  background: #f7fdfc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 2rem;
 }
-
-.blog-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+.main-wrapper {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
-.blog-card:hover {
-  transform: translateY(-5px);
-}
-
-.thumbnail {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.compare-table {
-  margin-top: 3rem;
+.sidebar {
+  flex: 1;
+  background-color: #f0fbfa;
   padding: 1rem;
-  background: #f5f5f5;
-  border-radius: 10px;
+  border-left: 2px solid #e0f0ed;
 }
 
-.compare-table table {
-  width: 100%;
-  border-collapse: collapse;
+.sidebar h3 {
+  color: #006d77;
 }
 
-.compare-table th, .compare-table td {
-  padding: 0.8rem;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
 }
 
-.compare-table th {
-  background-color: #efefef;
-}
-
-.pagination-wrapper {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.pagination-wrapper .pagination {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #007bff;
-  color: #fff;
-  border-radius: 6px;
+.sidebar ul li a {
+  color: #e63946;
   text-decoration: none;
-}
-
-.pagination-wrapper .pagination:hover {
-  background: #0056b3;
 }
