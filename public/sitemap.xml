@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://top5rated.in/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/tags/air-purifiers/</loc>
+    <loc>http://localhost:1313/tags/air-purifiers/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/tags/earbuds/</loc>
+    <loc>http://localhost:1313/tags/earbuds/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/categories/gadgets/</loc>
+    <loc>http://localhost:1313/categories/gadgets/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/tags/gadgets/</loc>
+    <loc>http://localhost:1313/tags/gadgets/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/categories/home-appliances/</loc>
+    <loc>http://localhost:1313/categories/home-appliances/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/tags/home-appliances/</loc>
+    <loc>http://localhost:1313/tags/home-appliances/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/tags/kitchen-appliances/</loc>
+    <loc>http://localhost:1313/tags/kitchen-appliances/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/tags/microwave/</loc>
+    <loc>http://localhost:1313/tags/microwave/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/blog/top-5-air-purifiers/</loc>
+    <loc>http://localhost:1313/blog/top-5-air-purifiers/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/blog/top-5-budget-phones/</loc>
+    <loc>http://localhost:1313/blog/top-5-budget-phones/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/blog/top-5-microwave-ovens/</loc>
+    <loc>http://localhost:1313/blog/top-5-microwave-ovens/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/blog/top-5-wireless-earbuds/</loc>
+    <loc>http://localhost:1313/blog/top-5-wireless-earbuds/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://top5rated.in/tags/wireless/</loc>
+    <loc>http://localhost:1313/tags/wireless/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url>
 </urlset>
