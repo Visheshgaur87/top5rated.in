@@ -1,17 +1,37 @@
-<h2>More Articles</h2>
-<div class="blog-list">
-  {{ range .Paginator.Pages }}
-    <div class="blog-card">
-      <a href="{{ .RelPermalink }}">
-        <img class="thumbnail" src="{{ .Params.image }}" alt="{{ .Title }}">
-        <h3>{{ .Title }}</h3>
-      </a>
+{{ define "main" }}
+<div class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+  <!-- Main blog posts -->
+  <div class="md:col-span-3 space-y-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      {{ range .Paginator.Pages }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
     </div>
-  {{ end }}
-</div>
-<div class="pagination">
-  {{ if .Paginator.HasPrev }}<a href="{{ .Paginator.Prev.URL }}">« Prev</a>{{ end }}
-  {{ if .Paginator.HasNext }}<a href="{{ .Paginator.Next.URL }}">Next »</a>{{ end }}
-</div>
-{{ partial "top-sellers.html" . }}
 
+    <!-- Pagination -->
+    <div class="flex justify-center mt-8 space-x-2 text-sm">
+      {{ if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL }}" class="px-3 py-1 rounded bg-white shadow hover:bg-gray-100">Previous</a>
+      {{ end }}
+      {{ range .Paginator.Pagers }}
+        <a href="{{ .URL }}" class="px-3 py-1 rounded 
+          {{ if eq . .Paginator }}
+            bg-blue-600 text-white font-semibold
+          {{ else }}
+            bg-white text-gray-700 hover:bg-gray-100
+          {{ end }}">
+          {{ .PageNumber }}
+        </a>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}" class="px-3 py-1 rounded bg-white shadow hover:bg-gray-100">Next</a>
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="bg-green-50 p-4 rounded-xl">
+    {{ partial "top-sellers.html" . }}
+  </aside>
+</div>
+{{ end }}
