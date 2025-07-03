@@ -1,10 +1,27 @@
-body { font-family: sans-serif; background: #f7fdfc; color: #111; }
-.site-header, footer { background: teal; color: white; padding: 1rem; text-align: center; }
-.logo img { height: 40px; vertical-align: middle; }
-.main-container { display: flex; flex-wrap: wrap; max-width: 1200px; margin: auto; padding: 1rem; }
-.main-content { flex: 0 0 70%; padding-right: 2rem; }
-.sidebar { flex: 0 0 30%; background: #e6fff5; padding: 1rem; border-left: 2px solid #ccc; }
-.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.post-card { background: white; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; }
-.post-card h2 { margin: 0 0 0.5rem; color: #00796b; }
-.pagination-wrapper { margin-top: 2rem; }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #333;
+}
+header, footer {
+  background: #008080;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+a {
+  color: #FF4B4B;
+  text-decoration: none;
+}
+.hero {
+  background: #B2F7EF;
+  padding: 2em;
+  text-align: center;
+}
+.post-card {
+  border-bottom: 1px solid #ddd;
+  padding: 1em;
+}

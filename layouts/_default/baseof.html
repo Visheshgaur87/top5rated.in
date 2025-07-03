@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ .Title }}</title>
-  <link rel="stylesheet" href="/css/style.css" />
+  <meta charset="UTF-8" />
+  <title>{{ block "title" . }}{{ .Title }} | Top5Rated.in{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}" />
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
   {{ partial "header.html" . }}
-  {{ block "main" . }}{{ end }}
-  {{ partial "footer.html" . }}
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    {{ block "main" . }}{{ end }}
+  </main>
 </body>
 </html>

@@ -1,0 +1,11 @@
+- name: Echo Dot (4th Gen) – Smart speaker with Alexa
+  image: /images/product1.jpg
+  link: https://www.amazon.in/dp/B08N5WRWNW?tag=visheshgaur87-21
+
+- name: Mi Smart Band 5 – Fitness Tracker
+  image: /images/product2.jpg
+  link: https://www.amazon.in/dp/B07X1KT6LD?tag=visheshgaur87-21
+
+- name: OnePlus Bullets Wireless Z2 Earphones
+  image: /images/product3.jpg
+  link: https://www.amazon.in/dp/B09V44T4G3?tag=visheshgaur87-21

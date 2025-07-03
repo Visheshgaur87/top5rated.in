@@ -1,27 +1,8 @@
 {{ define "main" }}
-<div class="main-container">
-  <main class="main-content">
-    <section class="grid">
-      {{ range .Paginator.Pages }}
-        {{ partial "post-card.html" . }}
-      {{ end }}
-    </section>
-    <div class="pagination-wrapper">
-      {{ template "_internal/pagination.html" . }}
-    </div>
-  </main>
-  <aside class="sidebar">
-    <section class="top-sellers">
-      <h2>Top Sellers</h2>
-      <ul>
-        <li><a href="#">Smartphone XYZ</a></li>
-        <li><a href="#">Wireless Earbuds ABC</a></li>
-        <li><a href="#">Microwave Oven 123</a></li>
-      </ul>
-    </section>
-    <section class="cta-box">
-      <p>📬 Subscribe for updates</p>
-    </section>
-  </aside>
-</div>
+  <section class="py-6 px-4">
+    <h1 class="text-2xl font-bold mb-4">Top Sellers</h1>
+    {{ range (first 5 (where .Site.RegularPages "Type" "posts")) }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </section>
 {{ end }}

@@ -1,9 +1,15 @@
-<div class="bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition">
-  {{ with .Params.thumbnail }}
-    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="w-full h-48 object-cover rounded-lg mb-3" />
+{{ $thumbnail := "" }}
+{{ with .Params.thumbnail }}
+  {{ $thumbnail = . }}
+{{ end }}
+<div class="bg-white shadow-md rounded-lg overflow-hidden max-w-2xl mx-auto">
+  {{ if $thumbnail }}
+    <img src="{{ $thumbnail }}" alt="{{ .Title }}" class="w-full h-48 object-cover" loading="lazy">
   {{ end }}
-  <h2 class="text-lg font-semibold mb-1 text-gray-800 hover:text-blue-600">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h2>
-  <p class="text-sm text-gray-600">{{ .Summary | truncate 110 }}</p>
+  <div class="p-4">
+    <h2 class="text-lg font-semibold text-gray-900 mb-2">
+      <a href="{{ .RelPermalink }}" class="hover:text-blue-600">{{ .Title }}</a>
+    </h2>
+    <p class="text-sm text-gray-600">{{ .Summary }}</p>
+  </div>
 </div>

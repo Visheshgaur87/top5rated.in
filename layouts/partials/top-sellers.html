@@ -1,17 +1,13 @@
-<div class="top-sellers-section py-6 max-w-6xl mx-auto px-4">
-  <h2 class="text-2xl font-bold mb-4 text-gray-800">Top Sellers</h2>
-  <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <li class="bg-white rounded-xl p-4 shadow hover:shadow-lg transition">
-      <a href="https://www.amazon.in/dp/B08N5WRWNW?tag=youraffiliateid" target="_blank">
-        <img src="/images/product1.jpg" alt="Product 1" class="rounded-md w-full h-40 object-cover mb-2" />
-        <p class="text-sm text-gray-700">Echo Dot (4th Gen) – Smart speaker with Alexa</p>
-      </a>
-    </li>
-    <li class="bg-white rounded-xl p-4 shadow hover:shadow-lg transition">
-      <a href="https://www.amazon.in/dp/B07X1KT6LD?tag=youraffiliateid" target="_blank">
-        <img src="/images/product2.jpg" alt="Product 2" class="rounded-md w-full h-40 object-cover mb-2" />
-        <p class="text-sm text-gray-700">Mi Smart Band 5 – Fitness Tracker</p>
-      </a>
-    </li>
+<div class="space-y-4">
+  <h3 class="text-xl font-bold text-gray-800">Top Sellers</h3>
+  <ul class="space-y-4">
+    {{ range .Site.Data.top_sellers }}
+      <li class="bg-white rounded-lg p-3 shadow hover:shadow-md transition">
+        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ .image }}" alt="{{ .name }}" class="w-full rounded-md mb-2 object-cover h-32" loading="lazy" />
+          <p class="text-sm text-gray-700">{{ .name }}</p>
+        </a>
+      </li>
+    {{ end }}
   </ul>
 </div>
