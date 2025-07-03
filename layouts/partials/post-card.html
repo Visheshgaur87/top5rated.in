@@ -1,4 +1,9 @@
-<article class="post-card">
-  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <p>{{ .Params.description }}</p>
-</article>
+<div class="bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition">
+  {{ with .Params.thumbnail }}
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="w-full h-48 object-cover rounded-lg mb-3" />
+  {{ end }}
+  <h2 class="text-lg font-semibold mb-1 text-gray-800 hover:text-blue-600">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h2>
+  <p class="text-sm text-gray-600">{{ .Summary | truncate 110 }}</p>
+</div>
