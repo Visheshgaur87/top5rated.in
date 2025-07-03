@@ -1,7 +1,7 @@
 ---
 title: "Top 5 Bluetooth Speakers"
-description: "Our picks for the best portable speakers."
-thumbnail: "/images/speakers-thumb.jpg"
-draft: false
+description: "Explore the best wireless speakers with rich sound and portability."
+date: 2025-06-24
 ---
-Content about speakers...
+
+Looking for great portable sound? Here are our top picks...

@@ -1,1 +1,1 @@
-// future scripts
+// Placeholder for future JS

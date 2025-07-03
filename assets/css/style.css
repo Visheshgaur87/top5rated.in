@@ -67,3 +67,11 @@
 .pagination-wrapper .pagination:hover {
   background: #0056b3;
 }
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}

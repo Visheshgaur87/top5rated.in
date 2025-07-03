@@ -2,6 +2,5 @@ baseURL = "https://top5rated.in"
 title = "Top 5 Rated | Expert Product Reviews"
 theme = "custom"
 languageCode = "en-us"
-
 [pagination]
   pagerSize = 5

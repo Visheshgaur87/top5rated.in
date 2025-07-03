@@ -1,6 +1,9 @@
 {{ define "main" }}
-<article>
+<article class="post-page">
   <h1>{{ .Title }}</h1>
   <div>{{ .Content }}</div>
 </article>
+{{ end }}
+{{ with .Params.compare_url }}
+  <a href="{{ . }}" class="btn btn-primary">Compare</a>
 {{ end }}
